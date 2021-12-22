@@ -58,7 +58,16 @@ divisibleEntre7();
 console.log("############################################");
 console.log("############################################");
 console.log("Ejercicio 5");
+let respuesta5 = `Las principales diferencias son:
 
+1. Usando el tipo "module" se especifica que el archivo javascript utiliza modulos y puede importar estos desde otros ficheros.
+2. El modo estricto esta activado usaod el tipo "module", mientras que cuando no esta se tiene que especificar.
+   Hay ciertos modos parecidos a otros lenguajges en modo estricto, como el error de una variable no declarada previamente.
+3. Cada ficher en modo "module" tiene su pripio "scope", mientras que sin este, las variable se hacen globales.
+
+`
+
+console.log(respuesta5)
 // Ejercicio 6
 console.log("############################################");
 console.log("############################################");
