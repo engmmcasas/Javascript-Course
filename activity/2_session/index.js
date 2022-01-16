@@ -57,17 +57,47 @@ button2.addEventListener("click", event => {
 
 // Ejercicio 6
 
+const button3 = document.getElementById("loginSuccessAsync");
+const button4 = document.getElementById("loginFailureAsync");
+
 
 let loginWitUsername = (username, password) => {
-    return new Promise(function (resolve, rejected) {
-      setTimeout(() => {
-        if (username === "admin" && password === "passwd") {
-          resolve("User logged in");
-        } else {
-          rejected("Error: invalid username or password");
-        }
-      }, 200);
-    });
+  return new Promise(function (resolve, rejected) {
+    setTimeout(() => {
+      if (username === "admin" && password === "passwd") {
+        resolve("User logged in");
+      } else {
+        rejected("Error: invalid username or password");
+      }
+    }, 200);
+  });
 };
+
+
+button3.addEventListener("click", async () => {
+
+  try{
+    let response = await loginWitUsername("admin", "passwd");
+    console.log(response);
+  }
+
+  catch (err){
+    console.log(err);
+  }
+});
+
+button4.addEventListener("click", async () => {
+
+  try{
+    let response = await loginWitUsername("admin2", "passwd2");
+    console.log(response);
+  }
+
+  catch (err){
+    console.log(err);
+  }
+});
+
+
 
 
