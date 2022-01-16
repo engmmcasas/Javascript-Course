@@ -94,8 +94,8 @@ let logbad = new Login(“pepe”, “bad”) // alert -&gt; <span class="hljs-k
 
                     <h2 id="arrow">Consola JavaScript</h2>
                     <p class="folder">/activity/2_session/index.js</p>
-                    <button class="custom-button" id="loginSuccess">Login</button>
-                    <button class="custom-button button-cancel" id="loginFailure">Error</button>
+                    <button class="custom-button" id="loginSuccess" >Login</button>
+                    <button class="custom-button button-cancel" id="loginFailure" >Error</button>
                     <button class="custom-button" id="loginSuccessAsync">Login Async</button>
                     <button class="custom-button button-cancel" id="loginFailureAsync">Error Async</button>
                     <pre>
@@ -123,12 +123,17 @@ let loginWitUsername = (username, password) => {
     });
 };</code>
 </pre>
+<button class="custom-button" id = "botonEjecicio2" onclick="actionButtonReceiver(this)">Ejecutar Call Stack</button>
 
-        </div>
+
+    </div>
     </div>
     <script src="../../prism.js"></script>
-    <script src="index.js">
+    <script type="module" src="index.js">
     </script>
+    <script src="./ejercicio2/ejercicio2.js">
+    </script>
+
 </body>
 
 </html>
