@@ -54,14 +54,6 @@ button2.addEventListener("click", event => {
   loginWrong.login();
 });
 
-function clickListenerLoginSucess(){
-  document.getElementById("loginSuccess");
-}
-
-function clickListenerLoginFailure(){
-  document.getElementById("loginFailure");
-}
-
 
 // Ejercicio 6
 
